@@ -1,6 +1,6 @@
 {
   "name": "@name-it-right/db",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Rules Database for Name IT Right",
   "main": "dist/index.js",
   "type": "module",

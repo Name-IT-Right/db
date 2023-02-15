@@ -34,7 +34,7 @@ This is an automated, but currently **a bit unsafe** way to use validations save
 Because validations are based in the `Record<string, Service|Resource|Property>` indexed type, the IDE support is currently limited.
 
 ```ts
-import { validations } from "@name-it-right/db"
+import { validationsUnsafe as validations } from "@name-it-right/db"
 
 // access services/resources/properties like this:
 const bucketNameValidations = validations.S3?.Bucket?.BucketName;
