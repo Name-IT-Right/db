@@ -41,4 +41,4 @@ Object.entries(rawDB).forEach(([cloudFormationTypeName, serviceValue]) => {
   }
 });
 
-export { validationsDB as validations };
+export { validationsDB as validationsUnsafe };
