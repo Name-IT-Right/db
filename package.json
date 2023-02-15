@@ -1,6 +1,6 @@
 {
   "name": "@name-it-right/db",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Rules Database for Name IT Right",
   "main": "dist/index.js",
   "type": "module",
@@ -13,7 +13,7 @@
   "author": "Piotrek Witkowski",
   "license": "ISC",
   "devDependencies": {
-    "@name-it-right/types": "^1.0.1",
+    "@name-it-right/types": "^2.0.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "rollup": "^3.15.0",
     "tslib": "^2.5.0",
