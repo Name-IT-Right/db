@@ -6,6 +6,8 @@
 // it is more convenient and generally safer to use than indexed objects.
 
 import { S3 } from './S3';
+import { SageMaker } from './SageMaker';
 export const validationsSafe = {
-  S3
+  S3,
+  SageMaker,
 }

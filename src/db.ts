@@ -55,5 +55,20 @@ export const rawDB = {
         },
       },
     }
+  },
+  "AWS::SageMaker::NotebookInstance": {
+    "properties": {
+      "NotebookInstanceName": {
+        "validation": {
+          "errors": [
+            {"id": "LENGTH_RULE", "regex": "^.{1,63}$", "errorMessage": "Name must be between 1 (min) and 63 (max) characters long."},
+            {"id": "CONTENTS_RULE", "regex": "^[a-zA-Z0-9-]*$", "errorMessage": "Name may only contain letters (a-Z), numbers (0-9), and hyphens (-)."},
+            {"id": "BEGINNING_RULE", "regex": "^(?!-).*", "errorMessage": "Name must not start with a hypen."},
+            {"id": "ENDING_RULE", "regex": "^(?!.*-$).*$", "errorMessage": "Name must not end with a hypen."}
+          ],
+          "warnings": []
+        }
+      }
+    }
   }
 };
